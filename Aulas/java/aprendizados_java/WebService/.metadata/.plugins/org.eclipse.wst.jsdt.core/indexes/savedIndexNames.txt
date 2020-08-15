@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+D:\rildo\projetos\aprendizados_java\WebService\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3398676903.index
+4214059796.index
+4028807987.index
+566244960.index
+804677223.index
+1658713262.index

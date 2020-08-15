@@ -1,0 +1,9 @@
+package com.netbyweb;
+
+public class MeuServico {
+	
+	public String digaAlgo (String assunto) {
+		return "O assunto de hoje será: " + assunto;
+	}
+
+}

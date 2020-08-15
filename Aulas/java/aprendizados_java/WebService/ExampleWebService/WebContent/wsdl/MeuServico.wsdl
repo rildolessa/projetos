@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://netbyweb.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://netbyweb.com" xmlns:intf="http://netbyweb.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://netbyweb.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="digaAlgo">
+    <complexType>
+     <sequence>
+      <element name="assunto" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="digaAlgoResponse">
+    <complexType>
+     <sequence>
+      <element name="digaAlgoReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="digaAlgoRequest">
+
+      <wsdl:part element="impl:digaAlgo" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="digaAlgoResponse">
+
+      <wsdl:part element="impl:digaAlgoResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="MeuServico">
+
+      <wsdl:operation name="digaAlgo">
+
+         <wsdl:input message="impl:digaAlgoRequest" name="digaAlgoRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:digaAlgoResponse" name="digaAlgoResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="MeuServicoSoapBinding" type="impl:MeuServico">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="digaAlgo">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="digaAlgoRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="digaAlgoResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="MeuServicoService">
+
+      <wsdl:port binding="impl:MeuServicoSoapBinding" name="MeuServico">
+
+         <wsdlsoap:address location="http://localhost:8080/ExampleWebService/services/MeuServico"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

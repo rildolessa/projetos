@@ -1,0 +1,14 @@
+package com.netbyweb.clente;
+
+import javax.xml.rpc.ServiceException;
+
+import com.netbyweb.MeuServico;
+import com.netbyweb.MeuServicoServiceLocator;
+
+public class ClienteWS {
+ 	
+	public static void main(String[] args) throws ServiceException {
+		MeuServico meuServico = new MeuServicoServiceLocator().getMeuServico();
+		System.out.println("Serviço webService: " + meuServico.digaAlgo("FUNFOU"));
+	}
+}

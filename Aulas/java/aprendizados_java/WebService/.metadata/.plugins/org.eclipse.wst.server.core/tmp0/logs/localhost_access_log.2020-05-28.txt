@@ -1,0 +1,10 @@
+127.0.0.1 - - [28/May/2020:17:15:26 -0300] "GET / HTTP/1.1" 404 763
+127.0.0.1 - - [28/May/2020:17:15:28 -0300] "POST /ExampleWebService/services/AdminService HTTP/1.0" 200 291
+127.0.0.1 - - [28/May/2020:17:15:28 -0300] "POST /ExampleWebService/services/AdminService HTTP/1.0" 200 4173
+0:0:0:0:0:0:0:1 - - [28/May/2020:17:16:00 -0300] "GET / HTTP/1.1" 404 763
+127.0.0.1 - - [28/May/2020:17:16:36 -0300] "GET / HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [28/May/2020:17:16:37 -0300] "GET /ExampleWebService/wsdl/MeuServico.wsdl HTTP/1.1" 200 2428
+0:0:0:0:0:0:0:1 - - [28/May/2020:17:16:42 -0300] "GET /ExampleWebService/wsdl/MeuServico.wsdl HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [28/May/2020:17:16:44 -0300] "GET /ExampleWebService/wsdl/MeuServico.wsdl HTTP/1.1" 304 -
+127.0.0.1 - - [28/May/2020:17:18:50 -0300] "GET /ExampleWebService/wsdl/MeuServico.wsdl HTTP/1.1" 200 2428
+127.0.0.1 - - [28/May/2020:17:19:07 -0300] "POST /ExampleWebService/services/MeuServico HTTP/1.1" 200 411
