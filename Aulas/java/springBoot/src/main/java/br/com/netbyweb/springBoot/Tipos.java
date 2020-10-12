@@ -9,6 +9,13 @@ public class Tipos {
 		boolean verdadeiro = true;
 		int numero = new Integer(3);
 		
+		Integer num = 52345;
+		
+		String texto = "Meu texto";
+//		texto = 23423;
+		
+//		var nome = "Era";
+		
 		System.out.println(numero);
 
 	}
